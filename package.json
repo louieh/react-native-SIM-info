@@ -1,6 +1,6 @@
 {
   "name": "react-native-sim-info",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Getting info of SIM.",
   "main": "index.js",
   "scripts": {
