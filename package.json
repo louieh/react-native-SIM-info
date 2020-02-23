@@ -25,6 +25,9 @@
   ],
   "author": "louie",
   "license": "ISC",
+  "peerDependencies": {
+    "react-native": "^0.61.5"
+  },
   "bugs": {
     "url": "https://github.com/louieh/react-native-SIM-info/issues"
   },
