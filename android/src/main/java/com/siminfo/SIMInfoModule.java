@@ -51,6 +51,11 @@ public class SIMInfoModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void test(Callback msgcallback) {
+        msgcallback.invoke("just for test");
+    }
+
+    @ReactMethod
     public void getSIMInfo(Callback msgcallback) {
         // Network Speed
         String mobile_download = Long.toString(TrafficStats.getMobileRxBytes());
@@ -124,6 +129,6 @@ public class SIMInfoModule extends ReactContextBaseJavaModule {
                 }
             }
         }
-        msgcallback.invoke(cellInfoList_str, res_info, mobile_download, mobile_upload, total_download, total_upload, "just for test");
+        msgcallback.invoke(cellInfoList_str, res_info, mobile_download, mobile_upload, total_download, total_upload);
     }
 }
